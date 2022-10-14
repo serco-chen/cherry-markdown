@@ -75,4 +75,65 @@ export default {
     underline: '下划线', // 下划线
     pinyin: '拼音', // 拼音
   },
+  en_US: {
+    bold: 'Bold', // 加粗
+    code: 'Code', // 代码
+    graph: 'Graph', // 画图
+    h1: 'H1', // 一级标题
+    h2: 'H2', // 二级标题
+    h3: 'H3', // 三级标题
+    h4: 'H4', // 四级标题
+    h5: 'H5', // 五级标题
+    header: 'Header', // 标题
+    insert: 'Insert', // 插入
+    italic: 'Italic', // 斜体
+    list: 'List', // 列表
+    quickTable: 'Quick Table', // 表格
+    quote: 'Quote', // 引用
+    size: 'Size', // 大小
+    color: 'Color', // 文字颜色&背景
+    strikethrough: 'Strikethrough', // 删除线
+    sub: 'Sub', // 下标
+    sup: 'Sup', // 上标
+    togglePreview: 'Toggle Preview', // 预览
+    fullScreen: 'Fullscreen', // 全屏
+    image: 'Image', // 图片
+    audio: 'Audio', // 音频
+    video: 'Video', // 视频
+    link: 'Link', // 超链接
+    hr: 'hr', // 分隔线
+    br: 'br', // 换行
+    toc: 'TOC', // 目录
+    pdf: 'PDF', // pdf
+    word: 'Word', // word
+    table: 'Table', // 表格
+    'line-table': 'Line Table', // 折线表格
+    'bar-table': 'Bar Table', // 柱状表格
+    formula: 'Formula', // 公式
+    insertFormula: 'Formula', // 公式
+    insertFlow: 'Flow Chart', // 流程图
+    insertSeq: 'sequence Diagram', // 时序图
+    insertState: 'State Diagram', // 状态图
+    insertClass: 'Class Diagram', // 类图
+    insertPie: 'Pie Chart', // 饼图
+    insertGantt: 'Gantt Chart', // 甘特图
+    checklist: 'Checklist', // 清单
+    ol: 'ol', // 有序列表
+    ul: 'ul', // 无序列表
+    undo: 'Undo', // 撤销
+    redo: 'Redo', // 恢复
+    previewClose: 'Close Preview', // 关闭预览
+    codeTheme: 'Code Theme', // 代码主题
+    switchModel: 'Switch Mode', // 模式切换
+    switchPreview: 'Preview', // 预览
+    switchEdit: 'Edit', // 返回编辑
+    classicBr: 'Classic br', // 经典换行
+    normalBr: 'Normal br', // 常规换行
+    settings: 'Settings', // 设置
+    mobilePreview: 'Preview for Mobile', // 移动端预览
+    copy: 'Copy', // 复制内容
+    export: 'Export', // 导出PDF、长图
+    underline: 'Underline', // 下划线
+    pinyin: 'Pinyin', // 拼音
+  },
 };
