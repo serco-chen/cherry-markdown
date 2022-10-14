@@ -57,11 +57,11 @@ export default class TogglePreview extends MenuBase {
     if (state) {
       icon.classList.toggle('ch-icon-previewClose', false);
       icon.classList.toggle('ch-icon-preview', true);
-      icon.title = locale.zh_CN.togglePreview;
+      icon.title = locale.en_US.togglePreview;
     } else {
       icon.classList.toggle('ch-icon-previewClose', true);
       icon.classList.toggle('ch-icon-preview', false);
-      icon.title = locale.zh_CN.previewClose;
+      icon.title = locale.en_US.previewClose;
     }
     this.$previewerHidden = state;
   }

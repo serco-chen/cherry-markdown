@@ -32,11 +32,11 @@ export default class SwitchModel extends MenuBase {
   attachEventListeners() {
     Event.on(this.instanceId, Event.Events.toolbarHide, () => {
       // 当收到工具栏隐藏事件后，修改工具栏的内容为切换到编辑模式的内容
-      this.dom.textContent = locale.zh_CN.switchEdit;
+      this.dom.textContent = locale.en_US.switchEdit;
     });
     Event.on(this.instanceId, Event.Events.toolbarShow, () => {
       // 当收到工具栏显示事件后，修改工具栏的内容为切换到预览模式的内容
-      this.dom.textContent = locale.zh_CN.switchPreview;
+      this.dom.textContent = locale.en_US.switchPreview;
     });
   }
 
@@ -46,13 +46,13 @@ export default class SwitchModel extends MenuBase {
       this.editor.previewer.previewOnly();
       const toolbar = this.dom.parentElement;
       toolbar.classList.add('preview-only');
-      this.dom.textContent = locale.zh_CN.switchEdit;
+      this.dom.textContent = locale.en_US.switchEdit;
     } else {
       // 从预览模式切换到编辑模式
       this.editor.previewer.editOnly(true);
       const toolbar = this.dom.parentElement;
       toolbar.classList.remove('preview-only');
-      this.dom.textContent = locale.zh_CN.switchPreview;
+      this.dom.textContent = locale.en_US.switchPreview;
     }
   }
 }

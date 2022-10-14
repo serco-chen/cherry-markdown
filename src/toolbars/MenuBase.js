@@ -130,7 +130,7 @@ export default class MenuBase {
       ? 'cherry-dropdown-item'
       : `cherry-toolbar-button cherry-toolbar-${this.iconName ? this.iconName : this.name}`;
     const span = createElement('span', classNames, {
-      title: locale.zh_CN[this.name] || $e(this.name),
+      title: locale.en_US[this.name] || $e(this.name),
     });
     // 如果有图标，则添加图标
     if (this.iconName && !this.noIcon) {
@@ -139,7 +139,7 @@ export default class MenuBase {
     }
     // 二级菜单强制显示文字，没有图标的按钮也显示文字
     if (asSubMenu || this.noIcon) {
-      span.innerHTML += locale.zh_CN[this.name] || $e(this.name);
+      span.innerHTML += locale.en_US[this.name] || $e(this.name);
     }
     // 只有一级菜单才保存dom，且只保存一次
     if (!asSubMenu && !this.dom) {
@@ -151,13 +151,13 @@ export default class MenuBase {
   createSubBtnByConfig(config) {
     const { name, iconName, onclick } = config;
     const span = createElement('span', 'cherry-dropdown-item', {
-      title: locale.zh_CN[name] || $e(name),
+      title: locale.en_US[name] || $e(name),
     });
     if (iconName) {
       const icon = createElement('i', `ch-icon ch-icon-${iconName}`);
       span.appendChild(icon);
     }
-    span.innerHTML += locale.zh_CN[name] || $e(name);
+    span.innerHTML += locale.en_US[name] || $e(name);
     span.addEventListener('click', onclick, false);
     return span;
   }

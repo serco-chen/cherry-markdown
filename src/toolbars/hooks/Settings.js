@@ -86,10 +86,10 @@ export default class Settings extends MenuBase {
         const icon = /** @type {HTMLElement} */ (dropdown.querySelector('.ch-icon-previewClose,.ch-icon-preview'));
         icon.classList.toggle('ch-icon-previewClose');
         icon.classList.toggle('ch-icon-preview');
-        icon.title = locale.zh_CN[previewName];
+        icon.title = locale.en_US[previewName];
         icon.parentElement.innerHTML = icon.parentElement.innerHTML.replace(
           /<\/i>.+$/,
-          `</i>${locale.zh_CN[previewName]}`,
+          `</i>${locale.en_US[previewName]}`,
         );
       }
     } else {
@@ -126,7 +126,7 @@ export default class Settings extends MenuBase {
     shortKey = this.matchShortcutKey(shortKey);
     if (shortKey === 'classicBr') {
       const [dom] = Array.from(this.subMenu.dom.children);
-      if (dom.childNodes[1].textContent === locale.zh_CN.classicBr) {
+      if (dom.childNodes[1].textContent === locale.en_US.classicBr) {
         dom.children[0].setAttribute(
           'class',
           dom.children[0].getAttribute('class').replace('ch-icon-br', 'ch-icon-normal'),
@@ -135,7 +135,7 @@ export default class Settings extends MenuBase {
         this.engine.hookCenter.hookList.paragraph.forEach((item) => {
           item.classicBr = false;
         });
-        dom.childNodes[1].textContent = locale.zh_CN.normalBr;
+        dom.childNodes[1].textContent = locale.en_US.normalBr;
       } else {
         dom.children[0].setAttribute(
           'class',
@@ -145,7 +145,7 @@ export default class Settings extends MenuBase {
         this.engine.hookCenter.hookList.paragraph.forEach((item) => {
           item.classicBr = true;
         });
-        dom.childNodes[1].textContent = locale.zh_CN.classicBr;
+        dom.childNodes[1].textContent = locale.en_US.classicBr;
       }
       this.engine.$cherry.previewer.update('');
       this.engine.$cherry.initText(this.engine.$cherry.editor.editor);
